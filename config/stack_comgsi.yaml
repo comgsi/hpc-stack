@@ -88,44 +88,44 @@ fms:
   cmake_opts: "-DGFS_PHYS=ON -D64BIT=ON -DOPENMP=ON"
 
 bacio:
-  build: YES
+  build: NO
   version: v2.4.1
   install_as: 2.4.1
 
 sigio:
-  build: YES
+  build: NO
   version: v2.3.2
   install_as: 2.3.2
 
 sfcio:
-  build: YES
+  build: NO
   version: v1.4.1
   install_as: 1.4.1
 
 gfsio:
-  build: YES
+  build: NO
   version: v1.4.1
   install_as: 1.4.1
 
 w3nco:
-  build: YES
+  build: NO
   version: v2.4.1
   install_as: 2.4.1
 
 sp:
-  build: YES
+  build: NO
   version: v2.3.3
   install_as: 2.3.3
   openmp: ON
 
 ip:
-  build: YES
+  build: NO
   version: v3.3.3
   install_as: 3.3.3
   openmp: ON
 
 ip2:
-  build: YES
+  build: NO
   version: v1.1.2
   install_as: 1.1.2
   openmp: ON
@@ -136,32 +136,32 @@ landsfcutil:
   install_as: 2.4.1
 
 nemsio:
-  build: YES
+  build: NO
   version: v2.5.2
   install_as: 2.5.2
 
 nemsiogfs:
-  build: YES
+  build: NO
   version: v2.5.3
   install_as: 2.5.3
 
 w3emc:
-  build: YES
+  build: NO
   version: v2.7.3
   install_as: 2.7.3
 
 g2:
-  build: YES
+  build: NO
   version: v3.4.1
   install_as: 3.4.1
 
 g2c:
-  build: YES
+  build: NO
   version: v1.6.2
   install_as: 1.6.2
 
 g2tmpl:
-  build: YES
+  build: NO
   version: v1.9.1
   install_as: 1.9.1
 
@@ -183,7 +183,7 @@ gsiwrfio:
   openmp: ON
 
 bufr:
-  build: YES
+  build: NO
   version: bufr_v11.5.0
   install_as: 11.5.0
 

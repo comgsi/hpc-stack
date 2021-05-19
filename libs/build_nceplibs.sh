@@ -188,8 +188,8 @@ case $name in
   crtm)
     URL="https://github.com/noaa-emc/emc_crtm"
     ;;
-  gsiwrfio)
-    URL="https://github.com/comgsi/gsiwrfio"
+  wrf_io)
+    URL="https://github.com/comgsi/NCEPLIBS-wrf_io"
     ;;
   wgrib2)
     [[ -z ${STACK_wgrib2_ipolates:-} ]] && ipolates=0   || ipolates=$STACK_wgrib2_ipolates

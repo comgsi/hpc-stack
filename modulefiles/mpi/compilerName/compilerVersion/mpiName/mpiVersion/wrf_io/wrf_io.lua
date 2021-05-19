@@ -21,6 +21,7 @@ setenv("wrf_io_ROOT", base)
 setenv("wrf_io_VERSION", pkgVersion)
 setenv("WRF_IO_INC", pathJoin(base,"include"))
 setenv("WRF_IO_LIB", pathJoin(base,"lib/libwrf_io.a"))
+setenv("GSIWRFIO_LIB", pathJoin(base,"lib/libwrf_io.a"))
 
 whatis("Name: ".. pkgName)
 whatis("Version: " .. pkgVersion)

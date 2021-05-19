@@ -181,7 +181,7 @@ function build_lib() {
 
   # Determine if $1 is a NCEPLib
   case $1 in
-    bacio | sigio | sfcio | gfsio | nemsio | ncio | wrf_io | gsiwrfio | \
+    bacio | sigio | sfcio | gfsio | nemsio | ncio | wrf_io | \
     sp | ip | ip2 | \
     landsfcutil | nemsiogfs | \
     w3nco | w3emc | \
@@ -250,14 +250,20 @@ function build_info() {
 }
 
 function compilermpi_info() {
+  local python=$HPC_PYTHON
   local compiler=$HPC_COMPILER
   local mpi=$HPC_MPI
+
+  local pythonName=$(echo $HPC_PYTHON | cut -d/ -f1)
+  local pythonVersion=$(echo $HPC_PYTHON | cut -d/ -f2)
+
   local compilerName=$(echo $compiler | cut -d/ -f1)
   local compilerVersion=$(echo $compiler | cut -d/ -f2)
 
   local mpiName=$(echo $mpi | cut -d/ -f1)
   local mpiVersion=$(echo $mpi | cut -d/ -f2)
 
+  echo "Python: $pythonName/$pythonVersion"
   echo "Compiler: $compilerName/$compilerVersion"
   echo "MPI: $mpiName/$mpiVersion"
 }

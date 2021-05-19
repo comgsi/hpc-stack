@@ -35,7 +35,7 @@ if $MODULES; then
       using_mpi=YES
       ;;
     # The following can use MPI (if available)
-    wrf_io | gsiwrfio | wgrib2)
+    wrf_io | wgrib2)
       if [[ ! -z $mpi ]]; then
         module load hpc-$HPC_MPI
         using_mpi=YES
@@ -45,7 +45,7 @@ if $MODULES; then
 
   # Load dependencies
   case $name in
-    wrf_io | gsiwrfio )
+    wrf_io)
       module load netcdf
       ;;
     wgrib2)
@@ -150,7 +150,7 @@ else
       using_mpi=YES
       ;;
     # The following can use MPI (if available)
-    wrf_io | gsiwrfio | wgrib2)
+    wrf_io | wgrib2)
       [[ ! -z $mpi ]] && using_mpi=YES
       ;;
   esac
